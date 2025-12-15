@@ -1,0 +1,298 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: url("Aset/BG2.jpeg") no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header h1 {
+  font-size: 20px;
+  color: white;
+}
+
+nav a {
+  color: white;
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+.btn-explore {
+  padding: 8px 14px;
+  border: 1px solid white;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+}
+
+.map-section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 40px 5%;
+  gap: 30px;
+  background-color: rgba(255, 255, 255, 0.1);
+  min-height: 700px;
+}
+
+.map-description {
+  flex: 1;
+  width: 100%;
+  height: 200px;
+  color: white;
+}
+
+.map-frame,
+#map2 {
+  width: 100%;
+  height: 500px;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+#map2 {
+  height: 650px;
+}
+
+footer {
+  position: relative;
+  background-color: #222;
+  color: #b7b5b5;
+  height: 30vh;
+  display: flex;
+  flex-direction: row;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial,
+    sans-serif;
+}
+/* ---- */
+footer .sumber {
+  width: 45%;
+  text-align: left;
+  padding-top: 20px;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(160, 157, 157, 0.5);
+}
+footer .bagian1 {
+  width: 50%;
+}
+footer .sumber h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+footer .menu {
+  list-style: none;
+  padding-top: 10px;
+  padding-left: 0px;
+  margin: 0;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  font-size: 13px;
+  text-align: left;
+}
+footer .sumber .bagian2 {
+  margin-bottom: 10px;
+  width: 50%;
+  text-align: center;
+  padding: 20px;
+}
+footer .sumber .bagian2 .footer-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  font-size: 13px;
+  border-right: solid #fff;
+}
+footer .sumber .bagian2 .footer-menu li {
+  font-size: 14px;
+}
+footer .sumber .bagian2 .footer-menu li a {
+  color: #fff;
+  text-decoration: none;
+}
+footer .sumber .bagian2 .footer-menu li a:hover {
+  text-decoration: underline;
+}
+
+/* --- */
+footer .Author {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 65%;
+  padding-top: 5px;
+}
+.Author .photo {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+.Author .photo img {
+  border-radius: 50%;
+  width: 130px;
+  height: 130px;
+  object-position: top;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+.Author .me {
+  width: 30%;
+  padding: 20px;
+}
+.Author .me h4,
+.Author .me p {
+  color: #fff;
+}
+.Author .me p {
+  font-size: 13px;
+  font-weight: bold;
+  text-align: left;
+}
+.Author .me .p2 {
+  font-size: 13px;
+  font-weight: 200;
+  text-align: left;
+  margin-top: 10px;
+  color: #aaa;
+}
+.Author .text {
+  width: 30%;
+  text-align: center;
+  padding: 20px;
+}
+
+footer .Author .footer-social-icons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+footer .Author .footer-social-icons .icon {
+  font-size: 40px;
+  cursor: pointer;
+}
+
+footer .Author .footer-social-icons .icon:hover {
+  color: #ffffff;
+}
+
+footer .Author .bottom-footer p {
+  font-size: 14px;
+  color: #aaa;
+}
+
+footer .Author .bottom-footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer .Author .bottom-footer a:hover {
+  text-decoration: underline;
+}
+
+/* === LEGEND LEAFLET === */
+.info.legend {
+  background: #ffffff;
+  padding: 10px 12px;
+  font-size: 12px;
+  line-height: 1;
+  color: #333;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  max-width: 220px;
+}
+
+/* Judul legend */
+.info.legend h4 {
+  margin: 0 0 5px 0;
+  font-size: 13px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Section title */
+.info.legend b {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 2px;
+  font-size: 12px;
+}
+
+/* Checkbox */
+.info.legend input[type="checkbox"] {
+  margin-right: 6px;
+  cursor: pointer;
+}
+
+/* Label */
+.info.legend label {
+  cursor: pointer;
+}
+
+/* Simbol warna jalan */
+.info.legend i {
+  width: 14px;
+  height: 14px;
+  float: left;
+  margin-right: 6px;
+  opacity: 0.9;
+  border: 1px solid #999;
+}
+
+/* Clear float */
+.info.legend br {
+  clear: both;
+}
+
+/* Icon RS */
+.info.legend img {
+  vertical-align: middle;
+  margin-right: 4px;
+}
+
+/* Scroll jika legend panjang */
+.info.legend {
+  max-height: 350px;
+  overflow-y: auto;
+}
+
+/* === SUB LAYER AMENITAS === */
+.legend-sub {
+  margin-left: 16px;
+  padding-left: 8px;
+  border-left: 2px solid #ddd;
+}
+
+.legend-sub label {
+  display: block;
+  font-size: 11.5px;
+  margin-bottom: 2px;
+}
+
